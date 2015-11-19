@@ -14,14 +14,14 @@ angular.module('app.ChartCtrl', [
   $scope.vote = function(vote) {
     switch(vote) {
       case 'yes':
-      votes.yes++;
-      break;
+        votes.yes++;
+        break;
       case 'no':
-      votes.no++;
-      break;
+        votes.no++;
+        break;
       case 'iDontKnow':
-      votes.iDontKnow++;
-      break;
+        votes.iDontKnow++;
+        break;
     }
 
     mySocket.emit(vote);
@@ -30,7 +30,6 @@ angular.module('app.ChartCtrl', [
   }
 
   $scope.reset = function() {
-    console.log('reset client');
     mySocket.emit('reset');
   }
 
