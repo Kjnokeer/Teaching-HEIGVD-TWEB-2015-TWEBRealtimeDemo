@@ -52,7 +52,6 @@ io.on('connection', function(socket) {
   });
 
   socket.on('reset', function() {
-    console.log('reset');
     resetVotes();
     io.emit('updateVotes', votes);
   });
