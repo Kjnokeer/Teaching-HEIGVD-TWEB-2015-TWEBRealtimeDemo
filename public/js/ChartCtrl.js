@@ -10,6 +10,7 @@ angular.module('app.ChartCtrl', [
 
   $scope.labels = ['Yes', 'No', 'I don\'t know'];
   $scope.myData = [votes.yes, votes.no, votes.iDontKnow];
+  $scope.allData = [];
 
   $scope.vote = function(vote) {
     switch(vote) {

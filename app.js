@@ -32,8 +32,9 @@ function resetVotes() {
   };
 }
 
+resetVotes();
+
 io.on('connection', function(socket) {
-  resetVotes();
   io.emit('initVotes', votes);
 
   socket.on('yes', function() {
