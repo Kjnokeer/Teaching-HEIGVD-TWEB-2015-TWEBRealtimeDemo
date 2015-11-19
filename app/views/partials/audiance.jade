@@ -1,0 +1,12 @@
+h1 Are you happy?
+div(class='row')
+  div(class='col-md-4')
+    button(type='button', class='btn btn-primary btn-block', ng-click='vote("yes")') Yes
+  div(class='col-md-4')
+    button(type='button', class='btn btn-primary btn-block', ng-click='vote("no")') No
+  div(class='col-md-4')
+    button(type='button', class='btn btn-primary btn-block', ng-click='vote("iDontKnow")') I don't know
+
+div(class='row')
+  div(class='col-md-8 col-md-offset-2')
+    canvas(id='doughnut', class='chart chart-doughnut', chart-data='myData', chart-labels='labels', chart-legend='true')
